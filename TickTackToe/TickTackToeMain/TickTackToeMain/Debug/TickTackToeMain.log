@@ -1,0 +1,3 @@
+﻿  ButtonClass.cpp
+c:\users\daorin\source\repos\ticktacktoe\ticktacktoemain\ticktacktoemain\buttonclass.cpp(295): warning C4715: "checkWhoWon”: niewszystkie ścieżki kodu zwracają wartość
+  TickTackToeMain.vcxproj -> C:\Users\Daorin\source\repos\TickTackToe\TickTackToeMain\Debug\TickTackToeMain.exe
