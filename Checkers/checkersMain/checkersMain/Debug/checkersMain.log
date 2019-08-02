@@ -1,0 +1,8 @@
+﻿  Checker.cpp
+c:\users\daorin\source\repos\checkers\checkersmain\checkersmain\checker.cpp(95): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\daorin\source\repos\checkers\checkersmain\checkersmain\checker.cpp(103): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\daorin\source\repos\checkers\checkersmain\checkersmain\checker.cpp(115): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\daorin\source\repos\checkers\checkersmain\checkersmain\checker.cpp(117): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\daorin\source\repos\checkers\checkersmain\checkersmain\checker.cpp(859): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\daorin\source\repos\checkers\checkersmain\checkersmain\checker.cpp(861): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  checkersMain.vcxproj -> C:\Users\Daorin\source\repos\Checkers\checkersMain\Debug\checkersMain.exe

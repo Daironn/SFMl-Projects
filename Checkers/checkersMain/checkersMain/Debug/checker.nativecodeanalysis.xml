@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\daorin\source\repos\checkers\checkersmain\checkersmain</FILEPATH>
+      <FILENAME>checker.h</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Checker::taggetOne' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Checker::{ctor}</FUNCTION>
+    <DECORATED>??0Checker@@QAE@MMM@Z</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\daorin\source\repos\checkers\checkersmain\checkersmain</FILEPATH>
+      <FILENAME>checker.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'checkerInfo::checkerID' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>checkerInfo::{ctor}</FUNCTION>
+    <DECORATED>??0checkerInfo@@QAE@XZ</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\daorin\source\repos\checkers\checkersmain\checkersmain</FILEPATH>
+      <FILENAME>checker.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'checkerInfo::onWhatSquare' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>checkerInfo::{ctor}</FUNCTION>
+    <DECORATED>??0checkerInfo@@QAE@XZ</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\daorin\source\repos\checkers\checkersmain\checkersmain</FILEPATH>
+      <FILENAME>checker.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'checkerInfo::tagged' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>checkerInfo::{ctor}</FUNCTION>
+    <DECORATED>??0checkerInfo@@QAE@XZ</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
