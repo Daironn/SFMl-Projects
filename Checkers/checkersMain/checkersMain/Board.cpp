@@ -109,73 +109,73 @@ void Board::draw(sf::RenderWindow & window)
 			window.draw(squareArray[i]);
 }
 
-void Board::tagging(sf::Vector2f mousePos, Checker & eluwa)
+void Board::tagging(sf::Vector2f mousePos, Checker & obj)
 {
 
-	for (int j = 0; j < eluwa.checkerArrayBLACKInt; j++) {
+	for (int j = 0; j < obj.checkerArrayBLACKInt; j++) {
 		
 		for (int i = 0; i < squareArray.size(); i++) {
 
-			if (eluwa.checkerArrayBLACK[j].getGlobalBounds().contains(mousePos) && sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+			if (obj.checkerArrayBLACK[j].getGlobalBounds().contains(mousePos) && sf::Mouse::isButtonPressed(sf::Mouse::Left)){
 				
-				for (int n = 0; n < eluwa.checkerArrayBLACKInt; n++) {
+				for (int n = 0; n < obj.checkerArrayBLACKInt; n++) {
 
-					eluwa.checkerArrayInfoBLACK[n].tagged = false;
-					eluwa.checkerArrayInfoRED[n].tagged = false;
+					obj.checkerArrayInfoBLACK[n].tagged = false;
+					obj.checkerArrayInfoRED[n].tagged = false;
 				}
 
-				eluwa.checkerArrayInfoBLACK[j].tagged = true;
+				obj.checkerArrayInfoBLACK[j].tagged = true;
 					
 			}
 				
 		}
 	}
 
-	for (int j = 0; j < eluwa.checkerArrayREDInt; j++) {
+	for (int j = 0; j < obj.checkerArrayREDInt; j++) {
 
 		for (int i = 0; i < squareArray.size(); i++) {
 
-			if (eluwa.checkerArrayRED[j].getGlobalBounds().contains(mousePos) && sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+			if (obj.checkerArrayRED[j].getGlobalBounds().contains(mousePos) && sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
 
-				for (int n = 0; n < eluwa.checkerArrayREDInt; n++) {
+				for (int n = 0; n < obj.checkerArrayREDInt; n++) {
 
-					eluwa.checkerArrayInfoRED[n].tagged = false;
-					eluwa.checkerArrayInfoBLACK[n].tagged = false;
+					obj.checkerArrayInfoRED[n].tagged = false;
+					obj.checkerArrayInfoBLACK[n].tagged = false;
 				}
 
-				eluwa.checkerArrayInfoRED[j].tagged = true;
+				obj.checkerArrayInfoRED[j].tagged = true;
 
 			}
 		}
 	}
 }
 
-void Board::update(Checker & eluwa)
+void Board::update(Checker & obj)
 {
 	for (int i = 0; i < squareArray.size(); i++) {
 
-		for (int j = 0; j < eluwa.checkerArrayBLACK.size(); j++) {
+		for (int j = 0; j < obj.checkerArrayBLACK.size(); j++) {
 
-			if (squareArray[i].getGlobalBounds().contains(eluwa.checkerArrayBLACK[j].getPosition())) {
+			if (squareArray[i].getGlobalBounds().contains(obj.checkerArrayBLACK[j].getPosition())) {
 
 				
 				squareArrayInfo[i].ifContainpawn = true;
 				squareArrayInfo[i].isItBLACK = true;
-				squareArrayInfo[i].checkerIDBLACK = &eluwa.checkerArrayInfoBLACK[j].checkerID;
+				squareArrayInfo[i].checkerIDBLACK = &obj.checkerArrayInfoBLACK[j].checkerID;
 			}
 		}
 	}
 
 	for (int i = 0; i < squareArray.size(); i++) {
 
-		for (int j = 0; j < eluwa.checkerArrayRED.size(); j++) {
+		for (int j = 0; j < obj.checkerArrayRED.size(); j++) {
 
-			if (squareArray[i].getGlobalBounds().contains(eluwa.checkerArrayRED[j].getPosition())) {
+			if (squareArray[i].getGlobalBounds().contains(obj.checkerArrayRED[j].getPosition())) {
 
 
 				squareArrayInfo[i].ifContainpawn = true;
 				squareArrayInfo[i].isItRED = true;
-				squareArrayInfo[i].checkerIDRED = &eluwa.checkerArrayInfoRED[j].checkerID;
+				squareArrayInfo[i].checkerIDRED = &obj.checkerArrayInfoRED[j].checkerID;
 
 			}
 		}

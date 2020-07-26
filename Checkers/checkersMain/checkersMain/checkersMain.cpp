@@ -5,6 +5,8 @@
 #include "SFML/Window.hpp"
 #include <iostream>
 
+//Do you like pasta? I've got a lot of spaghetti code here
+
 int main()
 {
 	bool turnA;
@@ -16,10 +18,10 @@ int main()
 
 	sf::RenderWindow window(sf::VideoMode(1000, 1000), "SFML works!");
 
-	Board elo(112,112);
-	Checker siema(45);
-	elo.fill();
-	siema.fill();
+	Board board(112,112);
+	Checker checker(45);
+	board.fill();
+	checker.fill();
 
 	while (window.isOpen())
 	{
@@ -32,20 +34,16 @@ int main()
 
 		window.clear(sf::Color::Color(139, 69, 19));
 
-		elo.tagging(sf::Vector2f(sf::Mouse::getPosition(window)), siema);
+		board.tagging(sf::Vector2f(sf::Mouse::getPosition(window)), checker);
 
-		elo.update(siema);
-		siema.update(sf::Vector2f(sf::Mouse::getPosition(window)), elo, turnA);
-		elo.check(sf::Vector2f(sf::Mouse::getPosition(window)), siema);
-		elo.draw(window);
-		siema.draw(window);
+		board.update(checker);
+		checker.update(sf::Vector2f(sf::Mouse::getPosition(window)), board, turnA);
+		board.check(sf::Vector2f(sf::Mouse::getPosition(window)), checker);
+		board.draw(window);
+		checker.draw(window);
 
 		window.display();
 	}
 	return 0;
 }
 
-// zainplementować typ królowej
-// przenieść rozwiązania na czerwone
-// z końcowych lini wyjebać zbędne rzeczy
-//zamienic isblack na isred
